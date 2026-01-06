@@ -34,7 +34,8 @@ def clean_mileage(milage_val):
 
 # 1. Load Data
 try:
-    df = pd.read_csv('used_cars.csv') 
+    pd.read_csv("data/used_cars.csv")
+
     df.columns = df.columns.str.lower()
     print(f"✅ Data loaded! Columns: {list(df.columns)}")
 except FileNotFoundError:
